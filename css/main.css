@@ -6,14 +6,18 @@
   --header-logo-size: 24px;
   --header-logo-cl: #f9faf8;
 
-  --secondary-size: 18px;
+  --secondary-size: 16px;
   --secondary-cl: #e5e7eb;
 
   --hero-main-txt-size: 48px;
   --hero-main-txt-weight: bold;
   --hero-main-txt-cl: #f9faf8;
 
-  --btn-bg-cl: #3882f6;
+  --accent-cl: #3882f6;
+
+  --information-header-size: 36px;
+  --information-header-weight: bold;
+  --information-header-cl: #1f2937;
 }
 
 * {
@@ -30,6 +34,8 @@
 }
 
 .container * {
+  width: auto;
+  height: auto;
   margin-bottom: 10px;
 }
 
@@ -88,11 +94,12 @@ header li a {
 
 .hero button {
   color: var(--secondary-cl);
-  background-color: var(--btn-bg-cl);
+  background-color: var(--accent-cl);
   box-shadow: -1px 1px 50px 1px #333;
   border-radius: 5px;
   border: none;
   padding: 10px 15px;
+  cursor: pointer;
 }
 
 .container-half {
@@ -101,4 +108,49 @@ header li a {
 
   display: flex;
   align-items: center;
+}
+
+/* ---------- information ---------- */
+
+.information {
+  width: 100%;
+  height: 50vh;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.information h2 {
+  font-size: var(--information-header-size);
+  font-weight: var(--information-header-weight);
+  color: var(--information-header-cl);
+}
+
+.information p {
+  font-size: var(--secondary-size);
+  color: var(--dark-bg-cl);
+}
+
+.information .container {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25px;
+}
+
+.information .card {
+  width: 125px;
+}
+
+.information .image {
+  width: 125px;
+  height: 125px;
+  border-radius: 10px;
+  border: 2px solid var(--accent-cl);
 }
