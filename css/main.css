@@ -2,6 +2,7 @@
 
 :root {
   --dark-bg-cl: #1f2937;
+  --light-bg-cl: #e5e7eb;
 
   --header-logo-size: 24px;
   --header-logo-cl: #f9faf8;
@@ -18,6 +19,11 @@
   --information-header-size: 36px;
   --information-header-weight: bold;
   --information-header-cl: #1f2937;
+
+  --quote-txt-size: 36px;
+  --quote-txt-weight: 100;
+  --quote-txt-style: italic;
+  --quote-txt-cl: #1f2937;
 }
 
 * {
@@ -30,6 +36,12 @@
 .dark-bleed {
   background-color: var(--dark-bg-cl);
   box-shadow: 0 0 0 100vmax var(--dark-bg-cl);
+  clip-path: inset(0 -100vmax);
+}
+
+.light-bleed {
+  background-color: var(--light-bg-cl);
+  box-shadow: 0 0 0 100vmax var(--light-bg-cl);
   clip-path: inset(0 -100vmax);
 }
 
@@ -153,4 +165,36 @@ header li a {
   height: 125px;
   border-radius: 10px;
   border: 2px solid var(--accent-cl);
+}
+
+/* ---------- quote ---------- */
+
+.quote {
+  width: 100%;
+  height: 50vh;
+
+  font-size: var(--quote-txt-size);
+  color: var(--quote-txt-cl);
+  font-style: var(--quote-txt-style);
+  font-weight: var(--quote-txt-weight);
+
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.quote .container {
+  width: 80%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.quote * {
+  display: block;
+}
+
+.quote span:nth-child(2) {
+  text-align: right;
 }
