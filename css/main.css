@@ -8,6 +8,12 @@
 
   --secondary-size: 18px;
   --secondary-cl: #e5e7eb;
+
+  --hero-main-txt-size: 48px;
+  --hero-main-txt-weight: bold;
+  --hero-main-txt-cl: #f9faf8;
+
+  --btn-bg-cl: #3882f6;
 }
 
 * {
@@ -21,6 +27,10 @@
   background-color: var(--dark-bg-cl);
   box-shadow: 0 0 0 100vmax var(--dark-bg-cl);
   clip-path: inset(0 -100vmax);
+}
+
+.container * {
+  margin-bottom: 10px;
 }
 
 main {
@@ -54,4 +64,41 @@ header li {
 header li a {
   text-decoration: none;
   color: var(--secondary-cl);
+}
+
+/* ---------- hero ---------- */
+
+.hero {
+  height: calc(100vh - 50px);
+  width: 100%;
+
+  display: flex;
+}
+
+.hero h1 {
+  font-size: var(--hero-main-txt-size);
+  font-weight: var(--hero-main-txt-weight);
+  color: var(--hero-main-txt-cl);
+}
+
+.hero p {
+  font-size: var(--secondary-size);
+  color: var(--secondary-cl);
+}
+
+.hero button {
+  color: var(--secondary-cl);
+  background-color: var(--btn-bg-cl);
+  box-shadow: -1px 1px 50px 1px #333;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 15px;
+}
+
+.container-half {
+  height: 100%;
+  width: 50%;
+
+  display: flex;
+  align-items: center;
 }
