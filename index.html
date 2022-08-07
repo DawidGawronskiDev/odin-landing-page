@@ -13,10 +13,12 @@
   </head>
   <body>
     <main>
-      <header class="dark-bleed">
-        <span class="logo"
-          ><i class="fa fa-pagelines accent" aria-hidden="true"></i
-        ></span>
+      <header class="dark-bleed" id="header">
+        <a href="#hero"
+          ><span class="logo"
+            ><i class="fa fa-pagelines accent" aria-hidden="true"></i></span
+        ></a>
+
         <nav>
           <ul>
             <li>
@@ -37,7 +39,7 @@
           </ul>
         </nav>
       </header>
-      <section class="hero dark-bleed">
+      <section class="hero dark-bleed" id="hero">
         <div class="container-half">
           <div class="container">
             <h1>Plan<span class="accent">t</span> your future</h1>
@@ -45,7 +47,9 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nemo
               iure in? Hic, eos nostrum minima veniam repellat distinctio magni?
             </p>
-            <button>Sign up</button>
+            <a href="#information">
+              <button>Find out more</button>
+            </a>
           </div>
         </div>
         <div class="container-half">
@@ -56,34 +60,34 @@
           />
         </div>
       </section>
-      <section class="information">
+      <section class="information" id="information">
         <h2>What do we offer?</h2>
         <div class="container">
           <div class="card">
-            <div class="image"></div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <i class="fa fa-leaf accent" aria-hidden="true"></i>
+            <p>Plants</p>
           </div>
           <div class="card">
-            <div class="image"></div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <i class="fa fa-cube accent" aria-hidden="true"></i>
+            <p>Pots</p>
           </div>
           <div class="card">
-            <div class="image"></div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <i class="fa fa-cogs accent" aria-hidden="true"></i>
+            <p>Tools</p>
           </div>
           <div class="card">
-            <div class="image"></div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <i class="fa fa-heart accent" aria-hidden="true"></i>
+
+            <p>Life</p>
           </div>
         </div>
       </section>
       <section class="quote light-bleed">
         <div class="container">
           <span
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eum
-            ratione perspiciatis soluta temporibus amet.</span
+            >Plants do not speak, but their silence is alive with change.</span
           >
-          <span> ~ Dawid Gawronski</span>
+          <span> ~ May Sarton</span>
         </div>
       </section>
       <footer class="dark-bleed">
