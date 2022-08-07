@@ -6,23 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odin Landing Page</title>
     <link rel="stylesheet" href="/./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <main>
       <header class="dark-bleed">
-        <span class="logo">Header Logo</span>
+        <span class="logo"
+          ><i class="fa fa-pagelines accent" aria-hidden="true"></i
+        ></span>
         <nav>
           <ul>
-            <li><a href="#">header link one</a></li>
-            <li><a href="#">header link two</a></li>
-            <li><a href="#">header link three</a></li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-instagram accent" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-twitter accent" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-snapchat-ghost accent" aria-hidden="true"></i
+              ></a>
+            </li>
           </ul>
         </nav>
       </header>
       <section class="hero dark-bleed">
         <div class="container-half">
           <div class="container">
-            <h1>This website is awesome</h1>
+            <h1>Plan<span class="accent">t</span> your future</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nemo
               iure in? Hic, eos nostrum minima veniam repellat distinctio magni?
@@ -30,10 +48,16 @@
             <button>Sign up</button>
           </div>
         </div>
-        <div class="container-half"></div>
+        <div class="container-half">
+          <img
+            src="https://images.pexels.com/photos/1777813/pexels-photo-1777813.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+            class="hero-image"
+          />
+        </div>
       </section>
       <section class="information">
-        <h2>Some random information.</h2>
+        <h2>What do we offer?</h2>
         <div class="container">
           <div class="card">
             <div class="image"></div>
@@ -53,15 +77,18 @@
           </div>
         </div>
       </section>
-      <section class="quote">
+      <section class="quote light-bleed">
         <div class="container">
           <span
             >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eum
             ratione perspiciatis soluta temporibus amet.</span
           >
-          <span>-Dawid Gawronski</span>
+          <span> ~ Dawid Gawronski</span>
         </div>
       </section>
+      <footer class="dark-bleed">
+        <span>Copyright &copy; Dawid Gawronski 2022</span>
+      </footer>
     </main>
   </body>
 </html>
