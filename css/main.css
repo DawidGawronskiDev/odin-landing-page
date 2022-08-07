@@ -5,9 +5,53 @@
 
   --header-logo-size: 24px;
   --header-logo-cl: #f9faf8;
+
+  --secondary-size: 18px;
+  --secondary-cl: #e5e7eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+.dark-bleed {
+  background-color: var(--dark-bg-cl);
+  box-shadow: 0 0 0 100vmax var(--dark-bg-cl);
+  clip-path: inset(0 -100vmax);
 }
 
 main {
   width: 80%;
   margin: 0 auto;
+}
+
+/* ---------- header ---------- */
+
+header {
+  height: 50px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: var(--header-logo-size);
+  color: var(--header-logo-cl);
+}
+
+header li {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: var(--secondary-size);
+}
+
+header li a {
+  text-decoration: none;
+  color: var(--secondary-cl);
 }
